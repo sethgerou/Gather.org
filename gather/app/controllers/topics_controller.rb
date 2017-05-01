@@ -1,5 +1,4 @@
-class TopicsController < ActionController::Base
-  protect_from_forgery with: :exception
+class TopicsController < ApplicationController
 
   def index
     @topics = Topic.all

@@ -1,6 +1,6 @@
-<div class="topic">
-  <h1>Topics</h1>
+<div class="topics_list two">
+  <h1>TOPICS</h1>
   <% @topics.each do |topic| %>
-  <h3><%=link_to topic.name, topic_path(topic.id) %></h3>
+  <h3 class ="topic"><%=link_to topic.name, topic_path(topic.id) %></h3>
   <% end %>
 </div>
