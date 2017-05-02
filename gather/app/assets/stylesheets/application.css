@@ -13,3 +13,81 @@
  *= require_tree .
  *= require_self
  */
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+   grid-column: 1 / 4;
+   grid-row: 1;
+}
+
+.two {
+   grid-column: 2 / 4;
+   grid-row: 2 / 4;
+   margin-right: 50px;
+}
+
+.three {
+  grid-row: 2 / 5;
+  grid-column: 1;
+}
+
+.sidebar {
+  padding-left: 45px;
+  padding-right: 50px;
+}
+
+.header {
+  margin: 20px;
+  padding: 20px;
+}
+
+body {
+  background-color: #300C34;
+  color: white;
+  font-family: helvetica;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.topic a:link {color: white; text-decoration: none;}
+.topic a:visited {color: white; text-decoration: none;}
+.topic a:active {color: #F89C1C}
+
+.heading {
+  color: #F89C1C
+}
+
+.circle {
+   background-color: #F89C1C;
+   height: 100px;
+   width: 100px;
+   border-radius: 100%;
+   margin: 20px;
+   font-family: helvetica;
+   font-weight: bold;
+   padding: 10px;
+   color: white;
+   text-align: center;
+   display: table;
+}
+
+.btn-text {
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.container {
+   display: inline-block;
+}
+
+.buttons-container {
+   width: 80%;
+   margin: auto;
+}
