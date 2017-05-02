@@ -1,0 +1,7 @@
+<div class="topics_list two">
+  <h3>PARENT STORIES ABOUT <%= @topic.name.upcase %></h3>
+  <% @stories.each do |story| %>
+  <h5 class ="topic"><%=story.body %></h5>
+  <h5 class ="topic"><%=story.author %></h5>
+  <% end %>
+</div>

@@ -1,0 +1,8 @@
+<div class="topics_list two">
+  <h3><%= @topic.name.upcase %> RESOURCES</h3>
+  <% @resources.each do |resource| %>
+  <h5 class ="topic"><%=resource.summary %></h5>
+  <p class ="topic"><a href="http://<%=resource.url%>"><%=resource.url%></a> | <%=resource.phone %> | <a href="mailto:<%=resource.email%>"><%=resource.email %></a></p>
+  <p class ="topic"><%=resource.address %> | <%=resource.zip_code %></p></br>
+  <% end %>
+</div>
