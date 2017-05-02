@@ -12,21 +12,21 @@
   <div class="container">
     <div class="circle">
       <div class="btn-text">
-        WHAT EXPERTS SAY
+        <%= link_to 'WHAT EXPERTS SAY', topic_articles_path(@topic.id) %>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="circle">
       <div class="btn-text">
-        PARENT STORIES
+        <%= link_to 'PARENT STORIES', topic_stories_path(@topic.id) %>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="circle">
       <div class="btn-text">
-        LOCAL RESOURCES
+        <%= link_to 'LOCAL RESOURCES', topic_resources_path(@topic.id) %>
       </div>
     </div>
   </div>
