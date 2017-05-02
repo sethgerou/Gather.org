@@ -10,6 +10,12 @@
 
   <body>
     <div class="wrapper">
+      <div class="one">
+        <div class="header">
+          <%= image_tag("gather_logo_smaller.png", :alt => "gather logo", class:"logo") %>
+        </div>
+      </div>
+      <%= render :partial => "sidebar" %>
       <%= yield %>
     </div>
   </body>
