@@ -5,7 +5,7 @@ class CreateStories < ActiveRecord::Migration[5.1]
       t.string :email
       t.text :body
       t.integer :topic_id
-      
+
       t.timestamps
     end
   end

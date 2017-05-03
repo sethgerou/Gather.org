@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root 'topics#index'
+root 'landing#index'
 
 get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'
@@ -8,6 +8,9 @@ get '/logout' => 'sessions#destroy'
 
 get '/signup' => 'users#new'
 post '/users' => 'users#create'
+
+get "age", to: "topics#age"
+get "agefilter", to: "topics#agefilter"
 
   resources :topics do
     resources :articles

@@ -29,8 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem "recaptcha"
 gem 'dotenv-rails', groups: [:development, :test]
+gem "recaptcha", require: "recaptcha/rails"
 gem 'faker'
 
 # Use Capistrano for deployment
@@ -58,6 +58,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'simplecov', :require => false
   gem 'chromedriver-helper'
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
