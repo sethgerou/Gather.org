@@ -131,3 +131,12 @@ h1 {
 .show-buttons-container {
    text-align: left;
 }
+
+.new-user-form {
+  width: 200px;
+}
+
+.session {
+  margin-right: 20px;
+  text-align: right;
+}
