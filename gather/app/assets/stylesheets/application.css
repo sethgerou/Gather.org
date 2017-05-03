@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 .wrapper {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -36,6 +37,11 @@
   grid-column: 1;
 }
 
+.four {
+  grid-column: 1/4;
+  grid-row: 2/4;
+}
+
 .sidebar {
   padding-left: 45px;
   padding-right: 50px;
@@ -46,6 +52,30 @@
   padding: 20px;
 }
 
+.header-container {
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.landing-logo {
+  display: inline-block;
+  float: left;
+}
+
+.welcome {
+  display: inline-block;
+}
+
+.welcome h1 {
+  font-family: helvetica;
+  color: #E98A28
+}
+
+.welcome h3 {
+  color: white;
+}
 body {
   background-color: #300C34;
   color: white;
@@ -63,19 +93,26 @@ h1 {
 .heading {
   color: #F89C1C
 }
-
+.topics_list {
+}
 .circle {
-   background-color: #F89C1C;
    height: 100px;
    width: 100px;
    border-radius: 100%;
-   margin: 20px;
+   margin: 20px 30px;
    font-family: helvetica;
    font-weight: bold;
    padding: 10px;
    color: white;
    text-align: center;
    display: table;
+}
+.orange {
+     background-color: #F89C1C;
+}
+
+.grey {
+  background-color: #949594
 }
 
 .btn-text {
@@ -88,6 +125,9 @@ h1 {
 }
 
 .buttons-container {
-   width: 80%;
-   margin: auto;
+   text-align: center;
+}
+
+.show-buttons-container {
+   text-align: left;
 }

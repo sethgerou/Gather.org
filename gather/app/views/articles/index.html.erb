@@ -1,7 +1,7 @@
 <div class="topics_list two">
-  <h1>WHAT EXPERTS SAY ABOUT <%= @topic.name.upcase %></h1>
+  <h3>WHAT EXPERTS SAY ABOUT <%= @topic.name.upcase %></h3>
   <% @articles.each do |article| %>
   <h5 class ="topic"><%=article.body %></h5>
-  <h5 class ="topic"><%=article.author %></h5>
+  <h5 class ="topic">-<%=article.author %></h5>
   <% end %>
 </div>

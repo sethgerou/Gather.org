@@ -1,34 +1,31 @@
 <div class="topic two">
-<h3 class="heading">AGE: <%=@topic.min_age%>-<%=@topic.max_age%> Months</h3>
+  <h3 class="heading">AGE: <%=@topic.min_age%>-<%=@topic.max_age%> Months</h3>
+    <h1><%=@topic.name%></h1>
+  <h3 class="heading">DEFINITION:</h3>
+    <%=@topic.summary%>
+  <h3 class="heading">INTERNET RESOURCES</h3>
 
-<h1><%=@topic.name%></h1>
-
-<h3 class="heading">DEFINITION:</h3>
-<%=@topic.summary%>
-
-<h3 class="heading">INTERNET RESOURCES</h3>
-
-<div class="buttons-container">
-  <div class="container">
-    <div class="circle">
-      <div class="btn-text">
-        <%= link_to 'WHAT EXPERTS SAY', topic_articles_path(@topic.id) %>
+  <div class="show-buttons-container">
+    <div class="container">
+      <div class="circle orange">
+        <div class="btn-text">
+          <%= link_to 'WHAT EXPERTS SAY', topic_articles_path(@topic.id) %>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="circle grey">
+        <div class="btn-text">
+          <%= link_to 'PARENT STORIES', topic_stories_path(@topic.id) %>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="circle orange">
+        <div class="btn-text">
+          <%= link_to 'LOCAL RESOURCES', topic_resources_path(@topic.id) %>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="circle">
-      <div class="btn-text">
-        <%= link_to 'PARENT STORIES', topic_stories_path(@topic.id) %>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="circle">
-      <div class="btn-text">
-        <%= link_to 'LOCAL RESOURCES', topic_resources_path(@topic.id) %>
-      </div>
-    </div>
-  </div>
-</div>
 </div>

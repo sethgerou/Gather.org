@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 20170502154814) do
 
   create_table "topics", force: :cascade do |t|
     t.string "name"
-    t.integer "min_age"
-    t.integer "max_age"
+    t.integer "min_age", default: 0
+    t.integer "max_age", default: 90
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "summary"

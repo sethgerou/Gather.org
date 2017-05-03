@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-root 'topics#index'
-
+root 'landing#index'
+get "age", to: "topics#age"
+get "agefilter", to: "topics#agefilter"
   resources :topics do
     resources :articles
     resources :stories

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WELCOME TO GATHER</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <div class="wrapper">
+        <div class="one">
+          <div class="header-container">
+            <div class="landing-logo">
+              <%= link_to image_tag("gather_logo_smaller.png", :alt => "gather logo", class:"logo"), root_path %>
+            </div>
+            <div class="welcome">
+              <h1>WELCOME</h1>
+              <h3>How can we help?</h3>
+            </div>
+          </div>
+        </div>
+          <div class="topics_list topic four">
+            <div class="buttons-container">
+              <div class="container">
+                <div class="circle orange">
+                  <div class="btn-text">
+                    <%= link_to 'BROWSE BY TOPIC', topics_path %>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="circle grey">
+                  <div class="btn-text">
+                    <%= link_to 'BROWSE BY AGE', age_path %>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="circle orange">
+                  <div class="btn-text">
+                    <%= link_to 'PARENT SUPPORT' %>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="circle grey">
+                  <div class="btn-text">
+                    <%= link_to 'HELP<br/>i\'m not sure'.html_safe %>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+  </body>
+</html>
