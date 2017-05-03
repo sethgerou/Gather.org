@@ -9,33 +9,8 @@ class TopicsController < ApplicationController
     render :ages
   end
 
-  def one
-    @topics = Topic.where(min_age: [0..2])
-    render :index
-  end
-
-  def two
-    @topics = Topic.where(min_age: [4..6])
-    render :index
-  end
-
-  def three
-    @topics = Topic.where(min_age: [7..12])
-    render :index
-  end
-
-  def four
-    @topics = Topic.where(min_age: [13..18])
-    render :index
-  end
-
-  def five
-    @topics = Topic.where(min_age: [19..36])
-    render :index
-  end
-
-  def six
-    @topics = Topic.where(min_age: [36..90])
+  def agefilter
+    @topics = Topic.where(min_age: [params[:ages][:min_age]..params[:ages][:max_age]])
     render :index
   end
 

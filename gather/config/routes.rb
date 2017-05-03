@@ -1,14 +1,8 @@
 Rails.application.routes.draw do
 
-root 'topics#index'
+root 'landing#index'
 get "age", to: "topics#age"
-get "one", to: "topics#one"
-get "two", to: "topics#two"
-get "three", to: "topics#three"
-get "four", to: "topics#four"
-get "five", to: "topics#five"
-get "six", to: "topics#six"
-
+get "agefilter", to: "topics#agefilter"
   resources :topics do
     resources :articles
     resources :stories
