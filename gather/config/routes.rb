@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
 
 root 'topics#index'
+get "age", to: "topics#age"
+get "one", to: "topics#one"
+get "two", to: "topics#two"
+get "three", to: "topics#three"
+get "four", to: "topics#four"
+get "five", to: "topics#five"
+get "six", to: "topics#six"
 
   resources :topics do
     resources :articles
