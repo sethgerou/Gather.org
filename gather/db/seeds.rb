@@ -70,3 +70,5 @@ Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "
 Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 4)
 
 Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
+
+User.create(name: "Seth", email: "seth.gerou@gmail.com", password: "password")
