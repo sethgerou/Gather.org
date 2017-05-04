@@ -30,6 +30,7 @@
    grid-column: 2 / 4;
    grid-row: 2 / 4;
    margin-right: 50px;
+   margin-left: -100px;
 }
 
 .three {
@@ -84,6 +85,8 @@ body {
 
 h1 {
   font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .topic a:link {color: white; text-decoration: none;}
