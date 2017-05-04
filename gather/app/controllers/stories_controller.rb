@@ -2,6 +2,8 @@ class StoriesController < ApplicationController
   def index
     @topic = Topic.find(params[:topic_id])
     @stories = Story.where(topic_id: @topic.id)
+    @stories = @stories.sort { |a,b| b.updated_at <=> a.updated_at }
+
     render :index
   end
 

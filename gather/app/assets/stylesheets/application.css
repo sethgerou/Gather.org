@@ -71,7 +71,7 @@
 
 .welcome h1 {
   font-family: helvetica;
-  color: #E98A28
+  color: #E98A28;
 }
 
 .welcome h3 {
@@ -151,5 +151,19 @@ h1 {
 }
 
 .button {
-  display: inline-block;
+  background-color: #949594;
+  color: #300C34;
+  border: 0px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: white;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: lighter;
 }

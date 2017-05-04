@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   def index
     @topic = Topic.find(params[:topic_id])
     @articles = Article.where(topic_id: params[:topic_id])
+    @articles = @articles.sort { |a,b| b.updated_at <=> a.updated_at }
     render :index
   end
 
