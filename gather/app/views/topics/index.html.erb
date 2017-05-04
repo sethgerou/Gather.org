@@ -1,12 +1,9 @@
 <div class="topics_list two">
+  <h1>TOPICS</h1>
+  <% if current_user %>
+  <%= button_to "add a topic", new_topic_path, method: "get" %>
+    <% end %>
   <% @topics.each do |topic| %>
-    <h3 class ="topic"><%=link_to topic.name, topic_path(topic.id) %></h3>
+    <h3 class ="topic"><%=link_to topic.name.capitalize, topic_path(topic.id) %></h3>
   <% end %>
-  <div class="session">
-  <% if @current_user %>
-    signed in as <%= @current_user.name %> | <%= link_to "logout", '/logout' %> | <%= link_to 'Register a new admin', '/signup' %>
-  <% else %>
-    <%= link_to 'admin login', '/login' %>
-  <% end %>
-</div>
 </div>

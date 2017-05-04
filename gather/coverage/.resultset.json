@@ -12,6 +12,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
         1,
         1,
@@ -277,8 +279,17 @@
         1,
         null,
         1,
+        null,
         1,
         1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
         1,
         1,
         1,
@@ -288,6 +299,7 @@
         null
       ],
       "/home/sethgerou/Documents/gather/gather/app/controllers/articles_controller.rb": [
+        1,
         1,
         null,
         1,
@@ -301,10 +313,19 @@
       "/home/sethgerou/Documents/gather/gather/app/controllers/application_controller.rb": [
         1,
         1,
+        null,
+        1,
         null
       ],
       "/home/sethgerou/Documents/gather/gather/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/home/sethgerou/Documents/gather/gather/app/helpers/sessions_helper.rb": [
+        1,
+        1,
+        0,
+        null,
         null
       ],
       "/home/sethgerou/Documents/gather/gather/spec/controllers/stories/stories_controller_spec.rb": [
@@ -535,8 +556,20 @@
         1,
         null,
         null
+      ],
+      "/home/sethgerou/Documents/gather/gather/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/sethgerou/Documents/gather/gather/app/models/user.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1493828272
+    "timestamp": 1493848809
   }
 }

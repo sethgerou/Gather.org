@@ -140,3 +140,7 @@ h1 {
   margin-right: 20px;
   text-align: right;
 }
+
+.new_article, .new_resource {
+  width: 200px;
+}

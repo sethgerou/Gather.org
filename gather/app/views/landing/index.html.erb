@@ -52,10 +52,10 @@
               </div>
             </div>
             <div class="session">
-            <% if @current_user %>
-              signed in as <%= @current_user.name %> | <%= link_to "logout", '/logout' %> | <%= link_to 'Register a new admin', '/signup' %>
+            <% if current_user %>
+              signed in as <%= current_user.name %> | <%= link_to "logout", '/logout' %> | <%= link_to 'Register a new admin', '/signup' %>
             <% else %>
-              <%= link_to 'admin login', '/login' %> 
+              <%= link_to 'admin login', '/login' %>
             <% end %>
         </div>
       </div>
