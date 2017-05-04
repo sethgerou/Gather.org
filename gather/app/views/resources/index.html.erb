@@ -7,5 +7,11 @@
   <h5 class ="topic"><%=resource.summary %></h5>
   <p class ="topic"><a href="http://<%=resource.url%>"><%=resource.url%></a> | <%=resource.phone %> | <a href="mailto:<%=resource.email%>"><%=resource.email %></a></p>
   <p class ="topic"><%=resource.address %> | <%=resource.zip_code %></p></br>
+  <% if current_user %>
+    <div class="container">
+      <%= button_to "edit", edit_topic_resource_path(@topic, resource), method: "get", class: "button" %>
+      <%= button_to "delete", topic_resource_path(@topic, resource), method: "delete", class: "button",data: {confirm: "Are you sure? (this action can not be undone)"} %>
+    </div>
+  <% end %>
   <% end %>
 </div>

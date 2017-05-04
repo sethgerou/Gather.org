@@ -96,8 +96,10 @@ h1 {
 .heading {
   color: #F89C1C
 }
+
 .topics_list {
 }
+
 .circle {
    height: 100px;
    width: 100px;
@@ -146,4 +148,8 @@ h1 {
 
 .new_article, .new_resource {
   width: 200px;
+}
+
+.button {
+  display: inline-block;
 }

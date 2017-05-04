@@ -1,0 +1,27 @@
+<div class = "edit-story-form">
+  <ul class="errors">
+    <% if @story %>
+      <% @story.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<div class = "fields">
+  <h3>Edit story</h3>
+  <%= form_for @story, url: topic_story_path do |f| %>
+    <p>
+      <%= f.label :author %>
+      <%= f.text_field :author, size: "24", value: @story.author %>
+    </p>
+    <p>
+      <%= f.label :story %>
+      <%= f.text_area :body , size: "40x20", value: @story.body %>
+    </p>
+    <p>
+      <%= f.label :email %>
+      <%= f.text_area :email , size: "40", value: @story.email %>
+    </p>
+      <%= f.submit "Submit" %>
+  <% end %>
+  </div>
+</div>

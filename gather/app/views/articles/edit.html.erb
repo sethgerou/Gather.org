@@ -7,7 +7,7 @@
     <% end %>
   </ul>
 <div class = "fields new_article">
-  <h3>New article about <%= @topic.name.capitalize %></h3>
+  <h3>Edit article</h3>
   <%= form_for @article, url: topic_article_path do |f| %>
     <p>
       <%= f.label :author %>

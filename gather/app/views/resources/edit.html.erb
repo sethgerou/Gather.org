@@ -1,0 +1,39 @@
+<div class = "edit-resource-form">
+  <ul class="errors">
+    <% if @resource %>
+      <% @resource.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<div class = "fields new_resource">
+  <h3>Edit resource</h3>
+  <%= form_for @resource, url: topic_resource_path do |f| %>
+    <p>
+      <%= f.label :'website (url)' %>
+      <%= f.text_field :url, size: "24", value: @resource.url %>
+    </p>
+    <p>
+      <%= f.label :email %>
+      <%= f.text_area :email , size: "40", value: @resource.email %>
+    </p>
+    <p>
+      <%= f.label :phone %>
+      <%= f.text_area :phone , size: "40", value: @resource.phone %>
+    </p>
+    <p>
+      <%= f.label :address %>
+      <%= f.text_area :phone , size: "40", value: @resource.address %>
+    </p>
+    <p>
+      <%= f.label :'zip code' %>
+      <%= f.text_area :zip_code , size: "40", value: @resource.zip_code %>
+    </p>
+    <p>
+      <%= f.label :summary %>
+      <%= f.text_area :summary , size: "40x5", value: @resource.summary %>
+    </p>
+      <%= f.submit "Submit" %>
+  <% end %>
+  </div>
+</div>

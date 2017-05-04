@@ -3,6 +3,14 @@
   <% @stories.each do |story| %>
   <h5 class ="topic"><%=story.body %></h5>
   <h5 class ="topic">-<%=story.author %></h5>
+  <% if current_user %>
+    <div class="container">
+      <%= button_to "edit", edit_topic_story_path(@topic, story), method: "get", class: "button" %>
+      <%= button_to "delete", topic_story_path(@topic, story), method: "delete", class: "button",data: {confirm: "Are you sure? (this action can not be undone)"} %>
+      <br />
+    </div>
+  <% end %>
   <% end %>
   <%= button_to "Contribute a story", new_topic_story_path, method: "get", class: "" %>
+
 </div>

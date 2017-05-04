@@ -7,9 +7,10 @@
   <h5 class ="topic"><%=article.body %></h5>
   <h5 class ="topic">-<%=article.author %></h5>
     <% if current_user %>
-      <%= button_to "edit this summary", edit_topic_article_path(@topic, article), method: "get", class: "edit" %>
-
-      <%= button_to "delete this summary", topic_article_path(@topic, article), method: "delete", class: "delete",data: {confirm: "Are you sure? (this action can not be undone)"} %>
+      <div class="container">
+        <%= button_to "edit", edit_topic_article_path(@topic, article), method: "get", class: "button" %>
+        <%= button_to "delete", topic_article_path(@topic, article), method: "delete", class: "button",data: {confirm: "Are you sure? (this action can not be undone)"} %>
+      </div>
     <% end %>
   <% end %>
 
