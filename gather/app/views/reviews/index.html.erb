@@ -1,0 +1,9 @@
+<div class="topics_list two">
+  <h3><%= @resource.name.upcase %> REVIEWS</h3>
+    <%= button_to "review", new_topic_resource_review_path(@resource.topic_id, @resource), method: "get", class: "button" %>
+  <% @reviews.each do |review| %>
+  <p class ="topic"><%=review.stars %> STARS (out of 5)</p>
+  <p class ="topic"><%=review.body%>
+  <p class ="topic"><%=review.author %></p><br />
+<% end %>
+</div>

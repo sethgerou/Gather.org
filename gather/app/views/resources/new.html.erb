@@ -10,28 +10,32 @@
   <h3>New <%= @topic.name.capitalize %> resource</h3>
   <%= form_for :resources, url: topic_resources_path do |f| %>
     <p>
+      <%= f.label :'name' %>
+      <%= f.text_field :name, size: "35", placeholder: "company/organization name" %>
+    </p>
+    <p>
       <%= f.label :'website (url)' %>
-      <%= f.text_field :url, size: "24", placeholder: "resource website" %>
+      <%= f.text_field :url, size: "35", placeholder: "resource website" %>
     </p>
     <p>
       <%= f.label :email %>
-      <%= f.text_area :email , size: "40", placeholder: "contact email" %>
+      <%= f.text_field :email , size: "35", placeholder: "contact email" %>
     </p>
     <p>
       <%= f.label :phone %>
-      <%= f.text_area :phone , size: "40", placeholder: "contact phone" %>
+      <%= f.text_field :phone , size: "35", placeholder: "contact phone" %>
     </p>
     <p>
       <%= f.label :address %>
-      <%= f.text_area :phone , size: "40", placeholder: "physical address" %>
+      <%= f.text_field :address , size: "35", placeholder: "physical address" %>
     </p>
     <p>
       <%= f.label :'zip code' %>
-      <%= f.text_area :zip_code , size: "40", placeholder: "zip code" %>
+      <%= f.text_field :zip_code , size: "35", placeholder: "zip code" %>
     </p>
     <p>
       <%= f.label :summary %>
-      <%= f.text_area :summary , size: "40x5", placeholder: "summary" %>
+      <%= f.text_area :summary , size: "34x6", placeholder: "summary" %>
     </p>
       <%= f.submit "Submit" %>
   <% end %>

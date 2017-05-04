@@ -137,7 +137,7 @@ h1 {
    text-align: left;
 }
 
-.new-user-form {
+.new-user-form, .new-review-form, .new-topic-form, .new-resource-form {
   width: 200px;
 }
 

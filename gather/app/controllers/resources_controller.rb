@@ -43,10 +43,10 @@ class ResourcesController < ApplicationController
 
   private
   def resource_params
-    params.require(:resources).permit(:url, :email, :phone, :address, :zip_code, :summary)
+    params.require(:resources).permit(:url, :email, :phone, :address, :zip_code, :summary, :name)
   end
 
   def edit_resource_params
-    params.require(:resource).permit(:url, :email, :phone, :address, :zip_code, :summary)
+    params.require(:resource).permit(:url, :email, :phone, :address, :zip_code, :summary, :name)
   end
 end

@@ -15,7 +15,9 @@ get "agefilter", to: "topics#agefilter"
   resources :topics do
     resources :articles
     resources :stories
-    resources :resources
+    resources :resources do
+      resources :reviews, shallow: true
+    end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
