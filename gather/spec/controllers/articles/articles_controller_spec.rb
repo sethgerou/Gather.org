@@ -7,6 +7,8 @@ describe ArticlesController do
   describe 'GET #index of articles' do
       it "assigns all the articles as @articles" do
         get :index, params: { topic_id: topic.id }
+        p assigns[:articles]
+        p Article.all
         expect(assigns(:articles)).to eq Article.all
       end
       it 'renders a list of articles' do

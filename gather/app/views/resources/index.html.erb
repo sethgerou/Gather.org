@@ -1,5 +1,8 @@
 <div class="topics_list two">
   <h3><%= @topic.name.upcase %> RESOURCES</h3>
+  <% if current_user %>
+  <%= button_to "add a resource", new_topic_resource_path, method: "get" %>
+    <% end %>
   <% @resources.each do |resource| %>
   <h5 class ="topic"><%=resource.summary %></h5>
   <p class ="topic"><a href="http://<%=resource.url%>"><%=resource.url%></a> | <%=resource.phone %> | <a href="mailto:<%=resource.email%>"><%=resource.email %></a></p>

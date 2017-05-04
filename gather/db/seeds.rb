@@ -8,8 +8,6 @@
 
 require 'faker'
 
-100.times {Topic.create(name: Faker::Lorem.word, summary: Faker::Lorem.paragraph(2, true, 4) ,min_age: Faker::Number.between(1, 40))}
-
 Topic.create(name: "GERD", summary: "Gastroesophageal reflux disease, or GERD, is a very common disorder. Gastroesophageal refers to the stomach and the esophagus. Reflux refers to the back-flow of acidic or non-acidic stomach contents into the esophagus. There is no known single cause of GERD. It occurs when the esophageal defenses are overwhelmed by stomach contents that reflux into the esophagus.", min_age: 1 )
 
 Topic.create(name: "Reflux", summary: "Reflux means that stomach acid and juices flow from the stomach back up into the tube that leads from the throat to the stomach (esophagus camera.gif). This causes heartburn. When you have heartburn that bothers you often, it is called gastroesophageal reflux disease, or GERD.", min_age: 7, max_age: 11)
@@ -72,3 +70,5 @@ Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "
 Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 4)
 
 Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
+
+User.create(name: "Seth", email: "seth.gerou@gmail.com", password: "password")

@@ -9,7 +9,6 @@ class StoriesController < ApplicationController
   end
 
   def create
-    p params
       @story = Story.new(story_params)
       @story.topic_id = params[:topic_id]
       if verify_recaptcha(model: @story) && @story.save
