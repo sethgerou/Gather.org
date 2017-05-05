@@ -10,21 +10,21 @@
   <%= form_for :topics, url: topics_path do |f| %>
     <p>
       <%= f.label :name %>
-      <%= f.text_area :name , size: "40", placeholder: "new topic name" %>
+      <%= f.text_field :name , size: "35", placeholder: "new topic name" %>
     </p>
     <p>
       <%= f.label :summary %>
-      <%= f.text_area :summary , size: "40x20", placeholder: "topic summary" %>
+      <%= f.text_area :summary , size: "34x10", placeholder: "topic summary" %>
     </p>
     <p>
       <%= f.label :min_age %>
-      <%= f.text_field :min_age , size: "20", placeholder: "age range start" %>
+      <%= f.text_field :min_age , size: "35", placeholder: "age range start" %>
     </p>
     <p>
       <%= f.label :max_age %>
-      <%= f.text_field :max_age , size: "20", placeholder: "age range end" %>
+      <%= f.text_field :max_age , size: "35", placeholder: "age range end" %>
     </p>
-      <%= f.submit "Submit" %>
+      <%= f.submit "Submit", class: "button" %>
   <% end %>
   </div>
 </div>

@@ -24,10 +24,11 @@ end
 
 def create
   @review = Review.new(review_params)
-  @resource = Resource.find(params[:resource_id]) 
+  @topic = Topic.find(params[:topic_id])
+  @resource = Resource.find(params[:resource_id])
   @review.resource_id = params[:resource_id]
   if verify_recaptcha(model: @review) && @review.save
-    redirect_to topic_resources_path(@resource.id)
+    redirect_to topic_resources_path(@topic, @resource)
   else
     render :new
   end

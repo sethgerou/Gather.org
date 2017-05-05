@@ -11,17 +11,17 @@
   <%= form_for :articles, url: topic_articles_path do |f| %>
     <p>
       <%= f.label :author %>
-      <%= f.text_field :author, size: "24", placeholder: "*display name" %>
+      <%= f.text_field :author, size: "35", placeholder: "*display name" %>
     </p>
     <p>
       <%= f.label :email %>
-      <%= f.text_area :email , size: "40", placeholder: "*not displayed" %>
+      <%= f.text_field :email , size: "35", placeholder: "*not displayed" %>
     </p>
     <p>
       <%= f.label :summary %>
-      <%= f.text_area :body , size: "40x20", placeholder: "summary" %>
+      <%= f.text_area :body , size: "34x6", placeholder: "summary" %>
     </p>
-      <%= f.submit "Submit" %>
+      <%= f.submit "Submit", class: "button" %>
   <% end %>
   </div>
 </div>

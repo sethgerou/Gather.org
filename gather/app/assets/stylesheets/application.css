@@ -126,7 +126,7 @@ h1 {
 }
 
 .container {
-   display: inline-block;
+   display: inline-flex;
 }
 
 .buttons-container {
@@ -146,12 +146,13 @@ h1 {
   text-align: right;
 }
 
-.new_article, .new_resource {
+.new_article, .new_resource, .new-story {
   width: 200px;
 }
 
 .button {
-  background-color: #949594;
+  margin: 5px 5px;
+  background-color: white;
   color: #300C34;
   border: 0px;
   font-weight: bold;
@@ -160,7 +161,12 @@ h1 {
 }
 
 .button:hover {
-  color: white;
+  color: #949594;
+}
+
+.button:active {
+  background-color: #646664;
+  border: 0px;
 }
 
 .italic {

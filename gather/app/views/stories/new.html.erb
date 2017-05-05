@@ -6,22 +6,22 @@
       <% end %>
     <% end %>
   </ul>
-<div class = "fields">
+<div class = "fields new-story">
   <%= form_for :stories, url: topic_stories_path do |f| %>
     <p>
       <%= f.label :author %>
-      <%= f.text_field :author, size: "24", placeholder: "*display name" %>
+      <%= f.text_field :author, size: "35", placeholder: "*display name" %>
     </p>
     <p>
       <%= f.label :story %>
-      <%= f.text_area :body , size: "40x20", placeholder: "your story here" %>
+      <%= f.text_area :body , size: "34x6", placeholder: "your story here" %>
     </p>
     <p>
       <%= f.label :email %>
-      <%= f.text_area :email , size: "40", placeholder: "*not displayed" %>
+      <%= f.text_field :email , size: "35", placeholder: "*not displayed" %>
     </p>
       <%= recaptcha_tags %>
-      <%= f.submit "Submit" %>
+      <%= f.submit "Submit", class: "button" %>
   <% end %>
   </div>
 </div>
