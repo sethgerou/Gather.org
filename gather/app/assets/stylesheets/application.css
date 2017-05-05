@@ -43,6 +43,11 @@
   grid-row: 2/4;
 }
 
+.five {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
 .sidebar {
   padding-left: 45px;
   padding-right: 50px;
@@ -172,4 +177,14 @@ h1 {
 .italic {
   font-style: italic;
   font-weight: lighter;
+}
+
+input, textarea, select {
+  border-radius: 3px;
+  font-family: helvetica;
+  color: #300C34;
+}
+
+.stories-container {
+  width: 50%;
 }

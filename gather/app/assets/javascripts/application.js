@@ -13,3 +13,19 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+$(function() {
+    $(document).on('click', '#new-story', function(event){
+      event.preventDefault();
+      container = $(event.target).parent().parent();
+      topic_id = container.attr('id');
+      $.ajax({
+        url: '/topics/' + topic_id + '/stories/new',
+        method: 'get'
+      }).done(function(response){
+        console.log(response);
+        $('.five').html(response);
+      })
+    })
+});
