@@ -51,24 +51,24 @@ Summer camp changed my life.", topic_id: 1)
 Story.create(author: "parent", email: "parent@gmail.com", body: "My older daughter will turn 11 this summer. I realize that makes her basically old enough for sleep-away camp. While part of me (the hovering part) wants to grab her, hold her close and never let her go off on her own for one or two weeks (or, gasp, a month!), another part wants to shove her on the bus and happily wave her off.
 Summer camp changed my life.", topic_id: 2)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 1)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 1)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 2)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 2)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 3)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 3)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 4)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 4)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 1)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 1)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 2)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 2)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 3)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 3)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 4)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 4)
 
-Resource.create(url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
+Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
 
 User.create(name: "Seth", email: "seth.gerou@gmail.com", password: "password")

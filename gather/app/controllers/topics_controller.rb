@@ -22,6 +22,19 @@ class TopicsController < ApplicationController
   def new
   end
 
+  def edit
+    @topic = Topic.find(params[:id])
+  end
+
+  def update
+    @topic = Topic.find(params[:id])
+    if @topic.update(edit_topic_params)
+      redirect_to topics_path
+    else
+      render :edit
+    end
+  end
+
   def create
       @topic = Topic.new(topic_params)
       if @topic.save
@@ -30,8 +43,19 @@ class TopicsController < ApplicationController
         render :new
       end
   end
+
+  def destroy
+    @topic = Topic.find(params[:id])
+    @topic.destroy
+    redirect_to topics_path
+  end
+
   private
   def topic_params
     params.require(:topics).permit(:name, :summary, :min_age, :max_age)
+  end
+
+  def edit_topic_params
+    params.require(:topic).permit(:name, :summary, :min_age, :max_age)
   end
 end

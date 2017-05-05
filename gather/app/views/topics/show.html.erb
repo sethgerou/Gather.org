@@ -5,26 +5,38 @@
     <%=@topic.summary%>
 
   <div class="show-buttons-container">
+    <a href="/topics/<%= @topic.id %>/articles">
     <div class="container">
       <div class="circle orange">
         <div class="btn-text">
-          <%= link_to 'WHAT EXPERTS SAY', topic_articles_path(@topic.id) %>
+          WHAT EXPERTS SAY
         </div>
       </div>
     </div>
+    </a>
+    <a href="/topics/<%= @topic.id %>/stories">
     <div class="container">
       <div class="circle grey">
         <div class="btn-text">
-          <%= link_to 'PARENT STORIES', topic_stories_path(@topic.id) %>
+          PARENT STORIES
         </div>
       </div>
     </div>
+    </a>
+    <a href="/topics/<%= @topic.id %>/resources">
     <div class="container">
       <div class="circle orange">
         <div class="btn-text">
-          <%= link_to 'LOCAL RESOURCES', topic_resources_path(@topic.id) %>
+          LOCAL RESOURCES
         </div>
       </div>
     </div>
+    </a>
   </div>
+  <% if current_user %>
+    <div class="container">
+      <%= button_to "edit", edit_topic_path(@topic), method: "get", class: "button" %>
+      <%= button_to "delete", topic_path(@topic), method: "delete", class: "button",data: {confirm: "Are you sure? (this will also delete all associated articles, stories, and resources, and can not be undone)"} %>
+    </div>
+  <% end %>
 </div>

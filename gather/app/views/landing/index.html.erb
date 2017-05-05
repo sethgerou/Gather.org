@@ -22,34 +22,42 @@
         </div>
           <div class="topics_list topic four">
             <div class="buttons-container">
+            <a href="/topics/">
               <div class="container">
                 <div class="circle orange">
                   <div class="btn-text">
-                    <%= link_to 'BROWSE BY TOPIC', topics_path %>
+                    BROWSE BY TOPIC
                   </div>
                 </div>
               </div>
+            </a>
+            <a href="/age">
               <div class="container">
                 <div class="circle grey">
                   <div class="btn-text">
-                    <%= link_to 'BROWSE BY AGE', age_path %>
+                    BROWSE BY AGE
                   </div>
                 </div>
               </div>
+            </a>
+            <a href="">
               <div class="container">
                 <div class="circle orange">
                   <div class="btn-text">
-                    <%= link_to 'PARENT SUPPORT' %>
+                    PARENT SUPPORT
                   </div>
                 </div>
               </div>
+              </a>
+              <a href="">
               <div class="container">
                 <div class="circle grey">
                   <div class="btn-text">
-                    <%= link_to 'HELP<br/>i\'m not sure'.html_safe %>
+                    HELP<br />i'm not sure
                   </div>
                 </div>
               </div>
+              </a>
             </div>
             <div class="session">
             <% if current_user %>

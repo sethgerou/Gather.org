@@ -1,4 +1,4 @@
-<div class = "new-article-form">
+<div class = "edit-article-form">
   <ul class="errors">
     <% if @article %>
       <% @article.errors.full_messages.each do |error| %>
@@ -7,19 +7,19 @@
     <% end %>
   </ul>
 <div class = "fields new_article">
-  <h3>New article about <%= @topic.name.capitalize %></h3>
-  <%= form_for :articles, url: topic_articles_path do |f| %>
+  <h3>Edit article</h3>
+  <%= form_for @article, url: topic_article_path do |f| %>
     <p>
       <%= f.label :author %>
-      <%= f.text_field :author, size: "35", placeholder: "*display name" %>
+      <%= f.text_field :author, value: @article.author, size: "24" %>
     </p>
     <p>
       <%= f.label :email %>
-      <%= f.text_field :email , size: "35", placeholder: "*not displayed" %>
+      <%= f.text_area :email, value: @article.email, size: "40" %>
     </p>
     <p>
       <%= f.label :summary %>
-      <%= f.text_area :body , size: "34x6", placeholder: "summary" %>
+      <%= f.text_area :body, value: @article.body, size: "40x20" %>
     </p>
       <%= f.submit "Submit", class: "button" %>
   <% end %>

@@ -1,0 +1,31 @@
+<div class = "edit-review-form">
+  <ul class="errors">
+    <% if @review %>
+      <% @review.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<div class = "fields">
+  <%= form_for @review, url: review_path do |f| %>
+    <p>
+      <%= f.label :author %>
+      <%= f.text_field :author, size: "35", value: @review.author %>
+    </p>
+    <p>
+      <%= f.label :review %>
+      <%= f.text_area :body , size: "34x6", value: @review.body %>
+    </p>
+    <p>
+      <%= f.label :'stars (out of five)' %>
+      <%= f.select(:stars, 1..5), value: @review.stars %>
+    </p>
+    <p>
+      <%= f.label :email %>
+      <%= f.text_field :email , size: "35", @review.email %>
+    </p>
+      <%= recaptcha_tags %>
+      <%= f.submit "Submit", class: "button" %>
+  <% end %>
+  </div>
+</div>

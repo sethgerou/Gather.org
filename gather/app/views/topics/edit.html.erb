@@ -1,4 +1,4 @@
-<div class = "new-topic-form">
+<div class = "edit-topic-form">
   <ul class="errors">
     <% if @topic %>
       <% @topic.errors.full_messages.each do |error| %>
@@ -7,22 +7,22 @@
     <% end %>
   </ul>
 <div class = "fields">
-  <%= form_for :topics, url: topics_path do |f| %>
+  <%= form_for @topic, url: topic_path do |f| %>
     <p>
       <%= f.label :name %>
-      <%= f.text_field :name , size: "35", placeholder: "new topic name" %>
+      <%= f.text_area :name , size: "40", value: @topic.name %>
     </p>
     <p>
       <%= f.label :summary %>
-      <%= f.text_area :summary , size: "34x10", placeholder: "topic summary" %>
+      <%= f.text_area :summary , size: "40x20", value: @topic.summary %>
     </p>
     <p>
       <%= f.label :min_age %>
-      <%= f.text_field :min_age , size: "35", placeholder: "age range start" %>
+      <%= f.text_field :min_age , size: "20", value: @topic.min_age %>
     </p>
     <p>
       <%= f.label :max_age %>
-      <%= f.text_field :max_age , size: "35", placeholder: "age range end" %>
+      <%= f.text_field :max_age , size: "20", value: @topic.max_age %>
     </p>
       <%= f.submit "Submit", class: "button" %>
   <% end %>

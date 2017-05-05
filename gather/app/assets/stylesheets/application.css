@@ -71,7 +71,7 @@
 
 .welcome h1 {
   font-family: helvetica;
-  color: #E98A28
+  color: #E98A28;
 }
 
 .welcome h3 {
@@ -96,8 +96,10 @@ h1 {
 .heading {
   color: #F89C1C
 }
+
 .topics_list {
 }
+
 .circle {
    height: 100px;
    width: 100px;
@@ -124,7 +126,7 @@ h1 {
 }
 
 .container {
-   display: inline-block;
+   display: inline-flex;
 }
 
 .buttons-container {
@@ -135,7 +137,7 @@ h1 {
    text-align: left;
 }
 
-.new-user-form {
+.new-user-form, .new-review-form, .new-topic-form, .new-resource-form {
   width: 200px;
 }
 
@@ -144,6 +146,30 @@ h1 {
   text-align: right;
 }
 
-.new_article, .new_resource {
+.new_article, .new_resource, .new-story {
   width: 200px;
+}
+
+.button {
+  margin: 5px 5px;
+  background-color: white;
+  color: #300C34;
+  border: 0px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: #949594;
+}
+
+.button:active {
+  background-color: #646664;
+  border: 0px;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: lighter;
 }
