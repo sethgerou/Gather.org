@@ -2,7 +2,7 @@
   <h3 class="heading">AGE: <%=@topic.min_age%>-<%=@topic.max_age%> Months</h3>
     <h1><%=@topic.name.upcase %></h1>
   <h3 class="heading">DEFINITION:</h3>
-    <%=@topic.summary%>
+    <%= simple_format(@topic.summary) %>
 
   <div class="show-buttons-container">
     <a href="/topics/<%= @topic.id %>/articles">

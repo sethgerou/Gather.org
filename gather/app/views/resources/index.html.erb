@@ -5,7 +5,7 @@
     <% end %>
   <% @resources.each do |resource| %>
   <h5 class="topic"><%=resource.name%><span class="italic"> -- updated: <%= resource.updated_at.strftime("%B %d, %Y") %> </span></h5>
-  <h5 class ="topic"><%=resource.summary %></h5>
+  <h5 class ="topic"><%= simple_format(resource.summary) %></h5>
   <p class ="topic"><a href="http://<%=resource.url%>"><%=resource.url%></a> | <%=resource.phone %> | <a href="mailto:<%=resource.email%>"><%=resource.email %></a></p>
   <p class ="topic"><%=resource.address %> | <%=resource.zip_code %> | reviews: <%=resource.reviews.count %>| <span class ="topic"><%=link_to "read reviews", topic_resource_reviews_path(@topic.id, resource.id) %></span></p>
 </br>

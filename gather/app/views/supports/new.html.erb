@@ -1,0 +1,22 @@
+<div class = "new-support-form">
+  <ul class="errors">
+    <% if @support %>
+      <% @support.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<div class = "fields">
+  <%= form_for :supports, url: supports_path do |f| %>
+    <p>
+      <%= f.label :title %>
+      <%= f.text_field :title , size: "35", placeholder: "new support resource  name" %>
+    </p>
+    <p>
+      <%= f.label :summary %>
+      <%= f.text_area :summary , size: "34x20", placeholder: "support resource  summary" %>
+    </p>
+      <%= f.submit "Submit", class: "button" %>
+  <% end %>
+  </div>
+</div>

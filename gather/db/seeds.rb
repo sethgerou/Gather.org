@@ -72,3 +72,9 @@ Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", ph
 Resource.create(name: "A-PPARENT-RE-SOURCE", url: "www.parent-resources.com", phone: "800-555-1212", email: "contact-us@parent-resources.com", address: "123 fake st., Springfield", zip_code: 98104, summary: "Parent Resources provides many resources for parents.  We're here to help!", topic_id: 5)
 
 User.create(name: "Seth", email: "seth.gerou@gmail.com", password: "password")
+
+User.create(name: "M", email: "marcylmiller@gmail.com ", password: "password")
+
+Help.create(summary: "this is a summary")
+
+Support.create(title: "support resource", summary: "this is a summary about a resource.  It's not very creative or accurate, but hey, I'm not great at writing seed data.")

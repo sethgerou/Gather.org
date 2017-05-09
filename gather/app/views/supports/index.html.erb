@@ -1,0 +1,16 @@
+<div class="topics_list two">
+  <h1>PARENT EDUCATION AND SUPPORT RESOURCES</h1>
+  <% if current_user %>
+  <%= button_to "add a support resource", new_support_path, method: "get" , class: "button" %>
+    <% end %>
+  <% @supports.each do |support| %>
+      <h3 class ="topic"><%=support.title%><h3/>
+      <h5 class = "topic"><%=simple_format(support.summary)%></h5>
+      <% if current_user %>
+            <div class="container">
+        <%= button_to "edit", edit_support_path(support), method: "get", class: "button" %>
+        <%= button_to "delete", support_path(support), method: "delete", class: "button",data: {confirm: "Are you sure? (this action can not be undone)"} %>
+        </div>
+      <% end %>
+    <% end %>
+</div>
