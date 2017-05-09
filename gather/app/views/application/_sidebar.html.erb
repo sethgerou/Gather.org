@@ -2,10 +2,10 @@
   <div class="sidebar">
     <h3 class="topic"><%= link_to "Browse By TOPIC", topics_path %></h3>
     <h3 class="topic"><%= link_to "Browse By AGE", age_path %></h3>
-    <h3 class="topic">Info on PARENT<br/>
+    <h3 class="topic"><%= link_to "Info on PARENT<br/>
     EDUCATION<br/>
-    and SUPPORT</h3>
-    <h3 class="topic">HELP! I'm not sure</h3>
+    and SUPPORT".html_safe, supports_path %></h3>
+    <h3 class="topic"><%= link_to "HELP! I'm not sure", helps_path %> </h3>
     <h3 class="topic"><%= link_to "HOME", root_path %></h3>
   </div>
 </div>

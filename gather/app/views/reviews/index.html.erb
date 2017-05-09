@@ -3,7 +3,7 @@
     <%= button_to "review", new_topic_resource_review_path(@resource.topic_id, @resource), method: "get", class: "button" %>
   <% @reviews.each do |review| %>
   <p class ="topic"><%=review.stars %> STARS (out of 5)</p>
-  <p class ="topic"><%=review.body%>
+  <p class ="topic"><%= simple_format(review.body) %>
   <p class ="topic"><%=review.author %></p><br />
   <% if current_user %>
     <div class="container">

@@ -12,6 +12,9 @@ post '/users' => 'users#create'
 get "age", to: "topics#age"
 get "agefilter", to: "topics#agefilter"
 
+resources :helps
+resources :supports
+
   resources :topics do
     resources :articles
     resources :stories

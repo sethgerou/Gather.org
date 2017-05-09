@@ -1,0 +1,11 @@
+<div class="topics_list two">
+<h1 class="topic">HELP</h1>
+<% @helps.each do |help| %>
+<h5> <%= simple_format(help.summary) %> </h5>
+<% if current_user %>
+      <div class="container">
+  <%= button_to "edit", edit_help_path(help), method: "get", class: "button" %>
+  </div>
+  <% end %>
+<% end %>
+</div>
