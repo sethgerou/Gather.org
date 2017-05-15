@@ -1,4 +1,4 @@
-<div class="topic two">
+<div class="topic col span-4-t span-8-d">
   <h3 class="heading">AGE: <%=@topic.min_age%>-<%=@topic.max_age%> Months</h3>
     <h1><%=@topic.name.upcase %></h1>
   <h3 class="heading">DEFINITION:</h3>
@@ -6,7 +6,7 @@
 
   <div class="show-buttons-container">
     <a href="/topics/<%= @topic.id %>/articles">
-    <div class="container">
+    <div class="flex-container">
       <div class="circle orange">
         <div class="btn-text">
           WHAT EXPERTS SAY
@@ -15,7 +15,7 @@
     </div>
     </a>
     <a href="/topics/<%= @topic.id %>/stories">
-    <div class="container">
+    <div class="flex-container">
       <div class="circle grey">
         <div class="btn-text">
           PARENT STORIES
@@ -24,7 +24,7 @@
     </div>
     </a>
     <a href="/topics/<%= @topic.id %>/resources">
-    <div class="container">
+    <div class="flex-container">
       <div class="circle orange">
         <div class="btn-text">
           LOCAL RESOURCES
@@ -34,7 +34,7 @@
     </a>
   </div>
   <% if current_user %>
-    <div class="container">
+    <div class="flex-container">
       <%= button_to "edit", edit_topic_path(@topic), method: "get", class: "button" %>
       <%= button_to "delete", topic_path(@topic), method: "delete", class: "button",data: {confirm: "Are you sure? (this will also delete all associated articles, stories, and resources, and can not be undone)"} %>
     </div>

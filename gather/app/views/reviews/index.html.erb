@@ -1,4 +1,4 @@
-<div class="topics_list two">
+<div class="topics_list col span-4-t span-8-d">
   <h3><%= @resource.name.upcase %> REVIEWS</h3>
     <%= button_to "review", new_topic_resource_review_path(@resource.topic_id, @resource), method: "get", class: "button" %>
   <% @reviews.each do |review| %>

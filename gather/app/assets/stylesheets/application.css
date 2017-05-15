@@ -12,41 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require_trg
  */
 
-.wrapper {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-gap: 10px;
-   grid-auto-rows: minmax(100px, auto);
-}
 
-.one {
-   grid-column: 1 / 4;
-   grid-row: 1;
-}
-
-.two {
-   grid-column: 2 / 4;
-   grid-row: 2 / 4;
-   margin-right: 50px;
-   margin-left: -100px;
-}
-
-.three {
-  grid-row: 2 / 5;
-  grid-column: 1;
-}
-
-.four {
-  grid-column: 1/4;
-  grid-row: 2/4;
-}
-
-.five {
-  grid-column: 3 / 4;
-  grid-row: 2 / 4;
-}
 
 .sidebar {
   padding-left: 45px;
@@ -130,7 +99,7 @@ h1 {
    vertical-align: middle;
 }
 
-.container {
+.flex-container {
    display: inline-flex;
 }
 
@@ -142,7 +111,7 @@ h1 {
    text-align: left;
 }
 
-.new-user-form, .new-review-form, .new-topic-form, .new-resource-form, .new-support-form, .edit-support-form, .edit-help-form {
+.new-user-form, .new-review-form, .new-topic-form, .new-resource-form, .new-support-form, .edit-support-form, .edit-help-form, .edit-story-form {
   width: 200px;
 }
 
@@ -186,5 +155,5 @@ input, textarea, select {
 }
 
 .stories-container {
-  width: 50%;
+  width: 300px;
 }

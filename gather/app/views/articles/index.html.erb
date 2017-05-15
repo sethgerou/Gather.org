@@ -1,4 +1,4 @@
-<div class="topics_list two">
+<div class="topics_list col span-4-t span-8-d">
   <h3>WHAT EXPERTS SAY ABOUT <%= @topic.name.upcase %></h3>
   <% if current_user %>
   <%= button_to "add an expert summary", new_topic_article_path, method: "get" , class: "button" %>

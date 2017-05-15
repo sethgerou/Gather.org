@@ -4,12 +4,13 @@
     <title>WELCOME TO GATHER</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'trg', media: 'all', 'data-turbolinks-track': 'reload' %>    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-      <div class="wrapper">
-        <div class="one">
+      <div class="container">
+        <div class="">
           <div class="header-container">
             <div class="landing-logo">
               <%= link_to image_tag("gather_logo_smaller.png", :alt => "gather logo", class:"logo"), root_path %>
@@ -23,7 +24,7 @@
           <div class="topics_list topic four">
             <div class="buttons-container">
             <a href="/topics/">
-              <div class="container">
+              <div class="flex-container">
                 <div class="circle orange">
                   <div class="btn-text">
                     BROWSE BY TOPIC
@@ -32,7 +33,7 @@
               </div>
             </a>
             <a href="/age">
-              <div class="container">
+              <div class="flex-container">
                 <div class="circle grey">
                   <div class="btn-text">
                     BROWSE BY AGE
@@ -41,7 +42,7 @@
               </div>
             </a>
             <a href="/supports">
-              <div class="container">
+              <div class="flex-container">
                 <div class="circle orange">
                   <div class="btn-text">
                     PARENT SUPPORT
@@ -50,7 +51,7 @@
               </div>
               </a>
               <a href="/helps">
-              <div class="container">
+              <div class="flex-container">
                 <div class="circle grey">
                   <div class="btn-text">
                     HELP<br />i'm not sure

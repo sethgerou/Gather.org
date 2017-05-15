@@ -1,4 +1,4 @@
-<div class="topics_list two stories-container", id="<%= @topic.id %>" >
+<div class="topics_list stories-container col span-4-t span-8-d", id="<%= @topic.id %>" >
   <h3>PARENT STORIES ABOUT <%= @topic.name.upcase %></h3>
   <% @stories.each do |story| %>
   <h5 class ="topic"><%= simple_format(story.body) %></h5>

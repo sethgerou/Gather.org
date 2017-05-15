@@ -8,12 +8,13 @@
   </head>
 
   <body>
-      <div class="wrapper">
+      <div class="container">
 
         <%= render :partial => "header" %>
-        <%= render :partial => "sidebar" %>
-        <%= yield %>
-        
+        <div class="row">
+          <%= render :partial => "sidebar" %>
+          <%= yield %>
+        </div>
       </div>
   </body>
 
