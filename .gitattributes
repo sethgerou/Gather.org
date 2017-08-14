@@ -1,3 +1,2 @@
-app/views/* linguist-vendored
-app/assets/* linguist-vendored
-public/* linguist-vendored
+* linguist-vendored
+*.rb linguist-vendored=false
